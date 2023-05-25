@@ -11,6 +11,10 @@
 		5DA43C372A1EAD3C009371F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA43C362A1EAD3C009371F6 /* ContentView.swift */; };
 		5DA43C392A1EAD3D009371F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA43C382A1EAD3D009371F6 /* Assets.xcassets */; };
 		5DA43C3C2A1EAD3D009371F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA43C3B2A1EAD3D009371F6 /* Preview Assets.xcassets */; };
+		5DA43C432A1EADB2009371F6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA43C422A1EADB2009371F6 /* MapView.swift */; };
+		5DA43C452A1EAF8C009371F6 /* CompletedGreenways.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5DA43C442A1EAF8C009371F6 /* CompletedGreenways.csv */; };
+		5DA43C492A1EB321009371F6 /* GEOSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5DA43C482A1EB321009371F6 /* GEOSwift */; };
+		5DA43C4B2A1F9481009371F6 /* WKTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA43C4A2A1F9481009371F6 /* WKTService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		5DA43C362A1EAD3C009371F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5DA43C382A1EAD3D009371F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DA43C3B2A1EAD3D009371F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5DA43C422A1EADB2009371F6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5DA43C442A1EAF8C009371F6 /* CompletedGreenways.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CompletedGreenways.csv; path = "/Users/zoecutler/Desktop/apps/WKTtoMapKit/WKTtoMapKit/WKT Data/CompletedGreenways.csv"; sourceTree = "<absolute>"; };
+		5DA43C4A2A1F9481009371F6 /* WKTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKTService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA43C492A1EB321009371F6 /* GEOSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,9 @@
 			children = (
 				5DA43C342A1EAD3C009371F6 /* WKTtoMapKitApp.swift */,
 				5DA43C362A1EAD3C009371F6 /* ContentView.swift */,
+				5DA43C422A1EADB2009371F6 /* MapView.swift */,
+				5DA43C4A2A1F9481009371F6 /* WKTService.swift */,
+				5DA43C462A1EAF91009371F6 /* WKT Data */,
 				5DA43C382A1EAD3D009371F6 /* Assets.xcassets */,
 				5DA43C3A2A1EAD3D009371F6 /* Preview Content */,
 			);
@@ -65,6 +76,14 @@
 				5DA43C3B2A1EAD3D009371F6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DA43C462A1EAF91009371F6 /* WKT Data */ = {
+			isa = PBXGroup;
+			children = (
+				5DA43C442A1EAF8C009371F6 /* CompletedGreenways.csv */,
+			);
+			path = "WKT Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = WKTtoMapKit;
+			packageProductDependencies = (
+				5DA43C482A1EB321009371F6 /* GEOSwift */,
+			);
 			productName = WKTtoMapKit;
 			productReference = 5DA43C312A1EAD3C009371F6 /* WKTtoMapKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 5DA43C282A1EAD3C009371F6;
+			packageReferences = (
+				5DA43C472A1EB321009371F6 /* XCRemoteSwiftPackageReference "GEOSwift" */,
+			);
 			productRefGroup = 5DA43C322A1EAD3C009371F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +152,7 @@
 			files = (
 				5DA43C3C2A1EAD3D009371F6 /* Preview Assets.xcassets in Resources */,
 				5DA43C392A1EAD3D009371F6 /* Assets.xcassets in Resources */,
+				5DA43C452A1EAF8C009371F6 /* CompletedGreenways.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DA43C372A1EAD3C009371F6 /* ContentView.swift in Sources */,
+				5DA43C432A1EADB2009371F6 /* MapView.swift in Sources */,
+				5DA43C4B2A1F9481009371F6 /* WKTService.swift in Sources */,
 				5DA43C352A1EAD3C009371F6 /* WKTtoMapKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DA43C472A1EB321009371F6 /* XCRemoteSwiftPackageReference "GEOSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GEOSwift/GEOSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DA43C482A1EB321009371F6 /* GEOSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DA43C472A1EB321009371F6 /* XCRemoteSwiftPackageReference "GEOSwift" */;
+			productName = GEOSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DA43C292A1EAD3C009371F6 /* Project object */;
 }
